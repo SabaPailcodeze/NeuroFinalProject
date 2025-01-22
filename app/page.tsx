@@ -1,7 +1,11 @@
-import React from "react";
+import Hero from "./Components/Organisms/HeroSection/Hero";
 
 const Page = () => {
-  return <div>Welcome to the Home Page</div>;
+  return (
+    <div className="w-full h-full">
+      <Hero />
+    </div>
+  );
 };
 
 export default Page;
