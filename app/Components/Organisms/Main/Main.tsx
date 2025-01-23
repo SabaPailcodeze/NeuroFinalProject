@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
+import WeBuilt from '../WeBuilt/WeBuilt'
 
 const Main = () => {
-  return <div>Main</div>;
-};
+  return (
+    <div className='h-screen bg-black'>
+      <WeBuilt/>
+    </div>
+  )
+}
 
-export default Main;
+export default Main
