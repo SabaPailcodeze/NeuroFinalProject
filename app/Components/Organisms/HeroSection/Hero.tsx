@@ -59,6 +59,7 @@ const Hero = () => {
               >
                 LET’S WORK
               </button>
+              „
             </div>
             <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
               {/* arrow image, future must be animated by bouncing effect*/}
@@ -73,7 +74,7 @@ const Hero = () => {
           </div>
           <div className="w-[30%] flex items-end">
             {/* video */}
-            <video src="./video/video.mp4" controls />
+            <video src="./video/video2.mp4" controls />
           </div>
         </div>
       </div>
