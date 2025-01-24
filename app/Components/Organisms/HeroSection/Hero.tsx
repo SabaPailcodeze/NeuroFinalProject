@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import SideBar from "../../Atoms/SideBar/SideBar";
 
 const Hero = () => {
   return (
     <div className=" h-[100vh] w-[100%] flex bg-image1 bg-cover bg-center font-supreme">
-      {/* this nav should be separated as component in future */}
-      <nav className="z-10 bg-[#3d3d3d49] px-6 h-full flex flex-col justify-between py-10 text-white">
+      {/* <nav className="z-10 bg-[#3d3d3d49] px-6 h-full flex flex-col justify-between py-10 text-white">
         <div className="flex justify-center">
           <Image src="/Images/N.svg" alt="N" width={40} height={40} />
         </div>
@@ -22,7 +22,8 @@ const Hero = () => {
             08
           </span>
         </div>
-      </nav>
+      </nav> */}
+      <SideBar />
       <div className=" w-full h-full text-white">
         <header className="flex items-center justify-between px-20 py-12">
           <h1 className="text-white text-[24px] font-extrabold">NEURO.</h1>
