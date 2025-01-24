@@ -1,7 +1,12 @@
 import React from "react";
+import WeBuilt from "../../Molecules/WeBuilt/WeBuilt";
 
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <div>
+      <WeBuilt />
+    </div>
+  );
 };
 
 export default Main;
