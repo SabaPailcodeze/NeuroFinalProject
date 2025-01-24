@@ -8,7 +8,7 @@ const LatestProject = () => {
         <HeadLineText
           hOneTitle='LATEST'
           pTitle = 'PROJECTS'
-          strokewidth = '600px'
+          strokeWidth = '570px'
         />
         <Project/>
     </div>

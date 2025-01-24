@@ -2,12 +2,12 @@ import React from 'react'
 interface HeadLineTextProps {
   hOneTitle: string;
   pTitle: string;
-  strokewidth?:string;
+  strokeWidth?:string;
 }
-const HeadLineText = ({hOneTitle, pTitle, strokewidth}:HeadLineTextProps) => {
+const HeadLineText = ({hOneTitle, pTitle, strokeWidth}:HeadLineTextProps) => {
   return (
     <div className='font-supreme '>
-      <h1 className="text-[56px] md:text-[88px] tracking-wide font-bold uppercase text-transparent"
+      <h1 className="text-[56px] md:text-[88px] tracking-wide font-bold uppercase "
           style={{
             WebkitTextStrokeWidth: "2px",
             WebkitTextStrokeColor: "#666",  
@@ -15,9 +15,11 @@ const HeadLineText = ({hOneTitle, pTitle, strokewidth}:HeadLineTextProps) => {
         >
           {hOneTitle}
         </h1>
-      <p className="relative left-48 text-[64px] font-supreme uppercase text-transparent text-[#E5E548] inline mx-11">
+      <p className="relative left-48 text-[64px] font-supreme uppercase  text-[#E5E548] inline mx-11">
         {pTitle}
-        <span className={`absolute top-1/2 -translate-y-1/2 -left-56 w-[${strokewidth}] h-[1px] bg-[#E5E548]`}></span>
+        <span className={`absolute z-10 top-1/2 -translate-y-1/2 -left-56 h-[1px] bg-[#E5E548]`}
+          style={{ width: strokeWidth }}
+        ></span>
       </p>
     </div>
   )
