@@ -3,7 +3,7 @@ import ReadButton from "../../Atoms/ReadButton/ReadButton";
 
 const WeBuilt = () => {
   return (
-    <div className="px-[150px] py-[160px] bg-black font-supreme flex flex-col gap-12">
+    <div className="py-[160px] font-supreme flex flex-col gap-12">
       <div className=" text-white">
         <h1
           className="text-[56px] md:text-[88px] tracking-wide font-bold leading-[100%] text-transparent"
