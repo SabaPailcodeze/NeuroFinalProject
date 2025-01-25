@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import HiddenSection from "../../Atoms/HiddenSection/HiddenSection";
 import CircleButton from "../../Atoms/CircleButton/CircleButton";
+import { ButtonProps } from "@/app/types/types";
 
-const HeroMain = ({ isOpen, setIsOpen }: any) => {
-  // props type any is bad practice and must be fixed!!!
+const HeroMain = ({ isOpen }: ButtonProps) => {
   return (
     <div className=" w-full h-full text-white">
       <header
@@ -23,7 +23,7 @@ const HeroMain = ({ isOpen, setIsOpen }: any) => {
           </label>
         </div>
       </header>
-      <HiddenSection isOpen={isOpen} setIsOpen={setIsOpen} />
+      <HiddenSection isOpen={isOpen} />
       <div
         className={`px-20 flex h-[80%] relative pt-16 ${
           isOpen ? " transition-all duration-300" : ""
@@ -48,7 +48,6 @@ const HeroMain = ({ isOpen, setIsOpen }: any) => {
             <CircleButton text={"LET’S WORK "} />
           </div>
           <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
-            {/* arrow image, future must be animated by bouncing effect*/}
             <Image
               src="./Images/arrow.svg"
               alt="arrow"
