@@ -1,6 +1,13 @@
 import React from 'react';
+interface ProjectProps {
+    numberCount: string,
+    hText:string,
+    pDescription:string,
+    pTitle:string,
+    pProfessio:string
+}
 
-const Project = () => {
+const Project = ({numberCount, hText, pDescription, pTitle, pProfessio}:ProjectProps) => {
   return (
     <div className='font-supreme'>
         <div
@@ -36,17 +43,25 @@ const Project = () => {
                 </svg>
             </div>
         </div>
-        <p className="text-white absolute bottom-0 left-0 -rotate-90 text-[168px]">01</p>
+        <p 
+            style={{
+                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeColor: "#ffffff",
+                color: "transparent"
+            }} 
+            className="text-white absolute bottom-0 left-0 -rotate-90 text-[168px]">
+            {numberCount}
+        </p>
         </div>
         <div className='text-white ml-10 tracking-wide font-medium leading-[160%]'>
-            <h3 className='mt-8 mb-4 text-[#E5E548] text-2xl'>Maquiladora ARCHITECT</h3>
-            <p className='text-lg w-[440px] mt-4 mb-2'>When art meet technology and nature, Maquiladora studio revamp their online presence.</p>
-            <p className='opacity-[0.3]'>WEB DESIGN / WEB DEVELOPMENT</p>
+            <h3 className='mt-8 mb-4 text-[#E5E548] text-2xl'>{hText}</h3>
+            <p className='text-lg w-[440px] mt-4 mb-2'>{pDescription}</p>
+            <p className='opacity-[0.3] uppercase'>{pTitle}</p>
             <div className='flex items-center gap-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
                     <circle cx="2" cy="2" r="2" fill="#E5E548"/>
                 </svg>
-                <p>ARCHITECTURE</p>
+                <p className='uppercase'>{pProfessio}</p>
             </div>
         </div>
     </div>    
