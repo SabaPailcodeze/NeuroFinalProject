@@ -49,12 +49,12 @@ const HeroMain = ({ isOpen, setIsOpen }: any) => {
           </div>
           <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
             {/* arrow image, future must be animated by bouncing effect*/}
-
             <Image
               src="./Images/arrow.svg"
               alt="arrow"
               width={22}
               height={26}
+              className="animate-bounce"
             />
           </div>
         </div>
