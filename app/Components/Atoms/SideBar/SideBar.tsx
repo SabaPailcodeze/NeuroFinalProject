@@ -16,21 +16,18 @@ const SideBar = ({ isOpen, setIsOpen }: any) => {
       <div className="flex justify-center">
         <Image src="/Images/N.svg" alt="N" width={40} height={40} />
       </div>
-      {/* button must be fixed! */}
       <button
-        className="flex gap-1 justify-center cursor-pointer"
+        className="flex gap-[2px] justify-center cursor-pointer"
         onClick={toggleBtn}
       >
         <div
-          //   className="h-[32px] w-[1px] bg-white"
-          className={`h-[32px] w-[1px] bg-white transition-all duration-500 ${
-            isOpen ? "rotate-45" : ""
+          className={`h-8 w-[1.5px] bg-white transition-all duration-500 ${
+            isOpen ? "rotate-45 translate-x-0" : "-translate-x-1"
           }`}
         ></div>
         <div
-          //   className="h-[32px] w-[1px] bg-white"
-          className={`h-[32px] w-[1px] bg-white transition-all duration-500 ${
-            isOpen ? "-rotate-45" : ""
+          className={`h-8 w-[1.5px] bg-white transition-all duration-500 ${
+            isOpen ? "-rotate-45 translate-x-0" : "translate-x-1"
           }`}
         ></div>
       </button>
