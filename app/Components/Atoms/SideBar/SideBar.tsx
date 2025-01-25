@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { ButtonProps } from "@/app/types/types";
 
-const SideBar = ({ isOpen, setIsOpen }: any) => {
-  // props type any is bad practice and must be fixed!!!
+const SideBar = ({ isOpen, setIsOpen }: ButtonProps) => {
   const toggleBtn = () => {
-    setIsOpen(!isOpen);
+    setIsOpen?.(!isOpen);
   };
   return (
     <nav
