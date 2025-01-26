@@ -14,7 +14,7 @@ const SideBar = ({ isOpen, setIsOpen }: ButtonProps) => {
       } px-6 h-full flex flex-col justify-between py-10 text-white transition-all duration-500`}
     >
       <div className="flex justify-center">
-        <Image src="/Images/N.svg" alt="N" width={40} height={40} />
+        <Image src="/Svgs/N.svg" alt="N" width={40} height={40} />
       </div>
       <button
         className="flex gap-[2px] justify-center cursor-pointer"
