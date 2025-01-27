@@ -1,9 +1,6 @@
 import React from "react";
-interface HeadLineTextProps {
-  hOneTitle: string;
-  pTitle: string;
-  strokeWidth?: string;
-}
+import { HeadLineTextProps } from "@/app/types/types";
+
 const HeadLineText = ({
   hOneTitle,
   pTitle,
