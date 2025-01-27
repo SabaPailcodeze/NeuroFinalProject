@@ -92,7 +92,7 @@ const HiddenSection = ({ isOpen }: ButtonProps) => {
             </div>
             <div className="absolute bottom-0">
               <Image
-                src="/Images/WORKS.svg"
+                src="/Svgs/WORKS.svg"
                 alt="Works"
                 width={578}
                 height={161}

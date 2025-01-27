@@ -49,7 +49,7 @@ const HeroMain = ({ isOpen }: ButtonProps) => {
           </div>
           <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
             <Image
-              src="./Images/arrow.svg"
+              src="/Svgs/arrow.svg"
               alt="arrow"
               width={22}
               height={26}
