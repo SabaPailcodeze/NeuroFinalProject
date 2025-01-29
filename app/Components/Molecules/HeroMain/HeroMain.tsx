@@ -16,7 +16,6 @@ const HeroMain = ({ isOpen }: ButtonProps) => {
         <div className="flex gap-10 text-[14px] font-medium">
           <p className="tracking-wide">4°12'S 332°48'E</p>
           <p className="opacity-[0.4]">MON 22.07</p>
-          {/* this toggle must be separated as component also must be fixed */}
           <label className="inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" className="sr-only peer" />
             <div className="relative w-11 h-6  bg-gray-200 peer-focus:outline-none   rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600"></div>

@@ -30,5 +30,5 @@ export interface ReadButtonProps {
 export interface StudioServicesProps {
   pNumber: string;
   hText: string;
-  imgSrc: string;
+  top: string;
 }
