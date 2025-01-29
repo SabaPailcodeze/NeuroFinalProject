@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,7 +19,11 @@ const Slider = () => {
           clickable: true,
           el: ".custom-pagination",
         }}
-        modules={[Navigation, Pagination]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Navigation, Pagination, Autoplay]}
         className="w-full text-white"
       >
         <SwiperSlide>
@@ -123,7 +127,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="flex justify-between">
+      <div className="flex justify-between pb-28">
         <ReadButton text="more stories" />
         <div>
           <div className="custom-pagination"></div>
