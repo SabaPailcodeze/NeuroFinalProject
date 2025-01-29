@@ -219,7 +219,7 @@ const LatestProject = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   const handleButtonClick = (): any => {
-    setShowMore((prev) => !prev);
+      setShowMore((prev) => !prev); 
   };
 
   return (
@@ -282,7 +282,7 @@ const LatestProject = () => {
         </div>
       </div>
       <div>
-        <ReadButton text="More workS" onClick={handleButtonClick} />
+        <ReadButton text={showMore ? "show less" : "more works"} onClick={handleButtonClick} />
       </div>
     </div>
   );

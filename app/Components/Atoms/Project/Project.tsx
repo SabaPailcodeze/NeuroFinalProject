@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 interface ProjectProps {
   numberCount: string;
   hText: string;
@@ -23,13 +24,13 @@ const Project = ({
           clipPath: "polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 0% 100%)",
         }}
       >
-        <div
-          className="absolute bottom-0 left-0 w-full h-[20%] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 ease-out"
+        <div                 
+          className="absolute bottom-0 left-0 w-[10px] h-[100px] opacity-0 transition-all duration-1000 ease-in-out group-hover:w-[100%] group-hover:opacity-100"
           style={{
             background:
-              "linear-gradient(to right, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 0, 1) 80%, rgba(229, 229, 72, 0.3) 80%, rgba(229, 229, 72, 0.2) 100%)",
+              "linear-gradient(to right, #ffff00 0%, #ffff00 80%, rgba(190, 190, 124, 0.658) 80%, rgba(136, 123, 123, 0.397) 100%)",
           }}
-        >
+          >
           <div className="absolute bg-black rounded-[50%] bottom-5 right-8 py-2.5 px-2 opacity-0 group-hover:opacity-100">
             <Image
               src="/Svgs/whiteArrow.svg"
@@ -45,7 +46,7 @@ const Project = ({
             WebkitTextStrokeColor: "#ffffff",
             color: "transparent",
           }}
-          className="text-white absolute bottom-1 left-0 -rotate-90 text-[168px]"
+          className="text-white absolute z-20 bottom-1 left-0 -rotate-90 text-[168px]"
         >
           {numberCount}
         </p>
