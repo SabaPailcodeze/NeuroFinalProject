@@ -4,7 +4,7 @@ import HeadLineText from "../../Atoms/HeadLineText/HeadLineText";
 
 const NeuroFooter = () => {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex h-[100vh] flex-col gap-20">
       <div className="flex py-20 items-center">
         <div>
           <h1
@@ -26,7 +26,7 @@ const NeuroFooter = () => {
             </span>
           </h1>
         </div>
-        <div className="">
+        <div>
           <CircleButton text="CONTACT US" color="#FFFFFF" />
         </div>
       </div>
