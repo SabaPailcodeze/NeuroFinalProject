@@ -30,7 +30,7 @@ const LatestProject = () => {
             pDescription="Codex brings new perspective in business consulting paradigm with their new identity."
             pTitle="BRAND IDENTITY"
             pProfessio="BUSINESS CONSULTING"
-            image="/Images/image4.jpg"
+            image="/Images/image8.jpg"
           />
         </div>
         <div className="flex gap-10 mt-32">
