@@ -26,7 +26,6 @@ const WeBuilt = () => {
         </h1>
       </div>
       <ReadButton text="READ MORE" />
-      {/* this is not responsive */}
     </div>
   );
 };
