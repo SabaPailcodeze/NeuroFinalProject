@@ -17,35 +17,35 @@ const StudioServicesMarge = () => {
                     <StudioServices 
                         pNumber='01'
                         hText='Website'
-                        imgSrc='/images/image1.jpg'
+                        top='112'
                     />
                 </div>
                 <div>            
                     <StudioServices 
                         pNumber='02'
                         hText='UI/UX'
-                        imgSrc='/images/image1.jpg'
+                        top='9'
                     />
                 </div>
                 <div>            
                     <StudioServices 
                         pNumber='03'
                         hText='Social Media Guideline'
-                        imgSrc='/images/image1.jpg'
+                        top='-94'
                     /> 
                 </div>
                 <div>
                     <StudioServices 
                         pNumber='04'
                         hText='Motion'
-                        imgSrc='/images/image1.jpg'
+                        top='-197'
                     />  
                 </div>
                 <div>                        
                     <StudioServices 
                         pNumber='05'
                         hText='BRAND STRATEGY'
-                        imgSrc='/images/image1.jpg'
+                        top='-300'
                     />  
                 </div>
             </div>   
