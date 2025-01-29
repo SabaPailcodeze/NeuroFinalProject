@@ -1,8 +1,5 @@
 import React from "react";
-type ReadButtonProps = {
-  text: string;
-  onClick?: () => void;
-};
+import { ReadButtonProps } from "@/app/types/types";
 
 const ReadButton = ({ text, onClick }: ReadButtonProps) => {
   return (

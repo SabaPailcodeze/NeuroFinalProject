@@ -17,8 +17,13 @@ export default {
       },
       backgroundImage: {
         image1: "url('/Images/image1.jpg')",
+        image2: "url('/Images/image2.jpg')",
         image3: "url('/Images/image3.jpg')",
+        image4: "url('/Images/image4.jpg')",
         image5: "url('/Images/image5.jpg')",
+        image6: "url('/Images/image6.jpg')",
+        image7: "url('/Images/image7.jpg')",
+        image8: "url('/Images/image8.jpg')",
       },
       video: {
         video: "url('/video/video.mp4')",

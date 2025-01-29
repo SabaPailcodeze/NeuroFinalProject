@@ -1,13 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
-interface ProjectProps {
-  numberCount: string;
-  hText: string;
-  pDescription: string;
-  pTitle: string;
-  pProfessio: string;
-}
+import { ProjectProps } from "@/app/types/types";
 
 const Project = ({
   numberCount,
@@ -15,20 +8,22 @@ const Project = ({
   pDescription,
   pTitle,
   pProfessio,
+  image,
 }: ProjectProps) => {
   return (
     <div className="font-supreme flex flex-col gap-8">
       <div
-        className="w-[550px] h-[408px] relative bg-image5 bg-cover grayscale group hover:grayscale-0 font-supreme transition-all duration-700 ease-out cursor-pointer"
+        className={`w-[550px] h-[408px] relative bg-cover grayscale group hover:grayscale-0 font-supreme transition-all duration-700 ease-out cursor-pointer`}
         style={{
           clipPath: "polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          backgroundImage: `url(${image})`,
         }}
       >
         <div                 
           className="absolute bottom-0 left-0 w-[10px] h-[100px] opacity-0 transition-all duration-1000 ease-in-out group-hover:w-[100%] group-hover:opacity-100"
           style={{
             background:
-              "linear-gradient(to right, #ffff00 0%, #ffff00 80%, rgba(190, 190, 124, 0.658) 80%, rgba(136, 123, 123, 0.397) 100%)",
+              "linear-gradient(to right, #ffff0077 0%, #ffff0077 80%, rgba(229, 229, 72, 0.3) 80%, rgba(229, 229, 72, 0.2) 100%)",
           }}
           >
           <div className="absolute bg-black rounded-[50%] bottom-5 right-8 py-2.5 px-2 opacity-0 group-hover:opacity-100">
