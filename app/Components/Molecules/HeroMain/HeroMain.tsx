@@ -44,7 +44,7 @@ const HeroMain = ({ isOpen }: ButtonProps) => {
               We are outstanding individuals <br /> who loves to combine art +
               design
             </p>
-            <CircleButton text={"LET’S WORK "} />
+            <CircleButton text="LET’S WORK " color="#E5E548" />
           </div>
           <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
             <Image

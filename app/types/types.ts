@@ -20,6 +20,7 @@ export interface HeadLineTextProps {
 
 export interface CircleBtnProps {
   text: string;
+  color: string;
 }
 
 export interface ReadButtonProps {

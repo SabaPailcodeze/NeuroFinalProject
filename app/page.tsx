@@ -1,3 +1,4 @@
+import Footer from "./Components/Organisms/Footer/Footer";
 import Hero from "./Components/Organisms/HeroSection/HeroSection";
 import Main from "./Components/Organisms/Main/Main";
 
@@ -6,6 +7,7 @@ const Page = () => {
     <div className="w-full h-full">
       <Hero />
       <Main />
+      <Footer />
     </div>
   );
 };
