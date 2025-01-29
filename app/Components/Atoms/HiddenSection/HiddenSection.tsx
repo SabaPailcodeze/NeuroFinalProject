@@ -5,7 +5,7 @@ import { ButtonProps } from "@/app/types/types";
 const HiddenSection = ({ isOpen }: ButtonProps) => {
   return (
     <div
-      className={`absolute z-10  h-[83.8%] w-[94.1%] bg-black left-0 transition-all ml-[85px] duration-500 ${
+      className={`absolute z-10  h-[86.4%] w-[94.1%] bg-black left-0 transition-all ml-[85px] duration-500 ${
         isOpen ? "left-0" : "left-[-191vh]"
       }`}
     >
@@ -90,7 +90,7 @@ const HiddenSection = ({ isOpen }: ButtonProps) => {
                 Nirmana Rd. 32 Building 123 Kampoeng Ideas <br /> Canggu, Bali
               </p>
             </div>
-            <div className="absolute bottom-0">
+            <div className="absolute bottom-5">
               <Image
                 src="/Svgs/WORKS.svg"
                 alt="Works"
