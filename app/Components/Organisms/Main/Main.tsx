@@ -6,8 +6,16 @@ import Slider from "../../Molecules/Slider/Slider";
 
 const Main = () => {
   return (
-    <div className="px-[150px] bg-black">
-      <WeBuilt />
+    <div className="px-[24px] md:px-[75px] xl:px-[150px] bg-black">
+      <WeBuilt 
+        WebkitTextStrokeWidth="2px"
+        WebkitTextStrokeColor="#666"
+        color="#E5E548"
+        webkitSpanStroke="#E5E548"
+        hTeaxt= "WE BUILD IMMERSIVE DESIGN"
+        pText= "SOLUTIONS"
+        lastHtext= "FOR YOUR INNOVATIVE BRANDS"
+      />
       <LatestProject />
       <StudioServicesMarge />
       <Slider />

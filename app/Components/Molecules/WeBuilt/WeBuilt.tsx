@@ -1,31 +1,43 @@
 import React from "react";
 import ReadButton from "../../Atoms/ReadButton/ReadButton";
+import { TextStrokeProps } from "@/app/types/types";
 
-const WeBuilt = () => {
+const WeBuilt = ({
+  WebkitTextStrokeWidth,
+  WebkitTextStrokeColor,
+  color,
+  webkitSpanStroke,
+  hTeaxt,
+  pText,
+  lastHtext
+}: TextStrokeProps) => {
   return (
-    <div className="py-[160px] font-supreme flex flex-col gap-12">
-      <div className=" text-white">
+    <div className="py-40 font-supreme flex flex-col gap-12">
+      <div className="text-white">
         <h1
-          className="text-[56px] md:text-[88px] tracking-wide font-bold leading-[100%] text-transparent"
+          className="flex-row text-[56px] md:text-[64px] xl:text-[88px] font-bold leading-[100%] text-transparent uppercase"
           style={{
-            WebkitTextStrokeWidth: "2px",
-            WebkitTextStrokeColor: "#666",
+            WebkitTextStrokeWidth,
+            WebkitTextStrokeColor,
           }}
         >
-          WE BUILD IMMERSIVE DESIGN
-          <span
-            className="px-3 text-transparent line-through decoration-1 text-center "
+          {hTeaxt}
+          <p
+            className=" inline-flex px-0 md:px-3 text-transparent line-through decoration-1 uppercase text-center"
             style={{
-              color: "var(--NeuYellow, #E5E548)",
-              WebkitTextStrokeColor: "#E5E548",
+              color,
+              WebkitTextStrokeColor: webkitSpanStroke,
             }}
           >
-            SOLUTIONS
-          </span>
-          FOR YOUR INNOVATIVE BRANDS
+            {pText}
+          </p>
+          {lastHtext}
         </h1>
       </div>
-      <ReadButton text="READ MORE" />
+      <div className="pt-12">
+        <ReadButton text="READ MORE" />
+      </div>
+
     </div>
   );
 };
