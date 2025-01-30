@@ -5,8 +5,8 @@ import { ButtonProps } from "@/app/types/types";
 const HiddenSection = ({ isOpen }: ButtonProps) => {
   return (
     <div
-      className={`absolute z-10  h-[86.4%] w-[94.1%] bg-black left-0 transition-all ml-[85px] duration-500 ${
-        isOpen ? "left-0" : "left-[-191vh]"
+      className={`absolute z-10  hidden1 bg-black transition-all duration-500 ${
+        isOpen ? "left-[78px]" : "left-[-191vh]"
       }`}
     >
       <div className="flex flex-col  w-full px-20 pt-16">
