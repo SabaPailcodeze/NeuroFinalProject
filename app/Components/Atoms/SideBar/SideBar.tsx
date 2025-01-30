@@ -11,11 +11,10 @@ const SideBar = ({ isOpen, setIsOpen }: ButtonProps) => {
     <nav
       className={`z-20 ${
         isOpen ? "bg-black" : "bg-[#3d3d3d49]"
-      } px-6 h-full flex flex-col justify-between py-10 text-white transition-all duration-500`}
+      } px-6 w-[80px] h-full flex flex-col justify-between py-10 text-white transition-all duration-500`}
     >
       <div className="flex justify-center">
         <Image src="/Svgs/N.svg" alt="N" width={40} height={40} />
-
       </div>
       <button
         className="flex gap-[2px] justify-center cursor-pointer"
