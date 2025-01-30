@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import HiddenSection from "../../Atoms/HiddenSection/HiddenSection";
 import CircleButton from "../../Atoms/CircleButton/CircleButton";
 import { ButtonProps } from "@/app/types/types";
 
 const HeroMain = ({ isOpen }: ButtonProps) => {
+  const [scrollEnabled, setScrollEnabled] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", !scrollEnabled);
+  }, [scrollEnabled]);
+
+  const handleScroll = () => {
+    setScrollEnabled(true);
+    document.getElementById("WeBuilt")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className=" w-full h-full text-white">
       <header
@@ -46,7 +61,10 @@ const HeroMain = ({ isOpen }: ButtonProps) => {
             </p>
             <CircleButton text="LET’S WORK " color="#E5E548" />
           </div>
-          <div className="h-full w-[70%] flex items-end justify-end cursor-pointer">
+          <div
+            className="h-full w-[70%] flex items-end justify-end cursor-pointer"
+            onClick={handleScroll}
+          >
             <Image
               src="/Svgs/arrow.svg"
               alt="arrow"
@@ -57,7 +75,7 @@ const HeroMain = ({ isOpen }: ButtonProps) => {
           </div>
         </div>
         <div className="w-[30%] flex items-end">
-          <video src="./video/video2.mp4" controls />
+          <video src="./video/video2.mp4" controls autoPlay muted loop />
         </div>
       </div>
     </div>

@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 60px;
+  background-color: #e5e548;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
 .swiper-pagination-bullet {
   padding: 3px;
   border: 2px solid #e5e548;
@@ -14,4 +28,13 @@
 
 .swiper-pagination-bullet-active {
   background-color: #e5e548 !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden1 {
+  width: calc(100% - 78px);
+  height: calc(100% - 131px);
 }

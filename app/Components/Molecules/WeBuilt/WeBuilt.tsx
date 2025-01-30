@@ -12,8 +12,16 @@ const WeBuilt = ({
   lastHtext
 }: TextStrokeProps) => {
   return (
+
     <div className="py-40 font-supreme flex flex-col gap-12">
       <div className="text-white">
+
+    <div
+      id="WeBuilt"
+      className="py-[160px] font-supreme flex flex-col gap-12 h-[100vh]"
+    >
+      <div className=" text-white">
+ main
         <h1
           className="flex-row text-[56px] md:text-[64px] xl:text-[88px] font-bold leading-[100%] text-transparent uppercase"
           style={{
