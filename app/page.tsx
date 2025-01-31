@@ -4,7 +4,7 @@ import Main from "./Components/Organisms/Main/Main";
 
 const Page = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full scroll-container ">
       <Hero />
       <Main />
       <Footer />

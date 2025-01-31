@@ -28,6 +28,9 @@ export default {
       video: {
         video: "url('/video/video.mp4')",
       },
+      screens: {
+        xsm: { max: "400px" }, // xsm იმუშავებს 400px-ზე დაბალ რეზოლუციაზე
+      },
     },
   },
   plugins: [],

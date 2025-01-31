@@ -3,6 +3,16 @@ export interface ButtonProps {
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface TextStrokeProps {
+  WebkitTextStrokeWidth: string;
+  WebkitTextStrokeColor: string;
+  color: string;
+  webkitSpanStroke: string;
+  hTeaxt: string,
+  pText: string,
+  lastHtext?: string
+}
+
 export interface ProjectProps {
   numberCount: string;
   hText: string;
