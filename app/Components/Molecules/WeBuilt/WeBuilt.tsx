@@ -16,7 +16,7 @@ const WeBuilt = ({
       <div className="text-white"></div>
       <div
         id="WeBuilt"
-        className="py-[160px] font-supreme flex flex-col gap-12 h-[100vh]"
+        className="font-supreme flex flex-col gap-12 h-[100vh]"
       >
         <div className=" text-white">
           <h1
