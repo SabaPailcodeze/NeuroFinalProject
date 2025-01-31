@@ -14,12 +14,18 @@ const LatestProject = () => {
   return (
     <div className="flex flex-col">
       <HeadLineText hOneTitle="LATEST" pTitle="PROJECTS" strokeWidth="570px" />
-      <div>
-        <div className="flex gap-10 mt-32">
+      <div className="flex overflow-x-auto w-full lg:block lg:overflow-x-hidden lg:flex-none lg:w-auto lg:pt-0 pt-16"
+          style={{
+            paddingBottom: '32px',
+            scrollbarWidth: 'thin', 
+            scrollbarColor: 'white black' 
+          }}
+      >
+        <div className="flex gap-6 justify-between lg:pt-28 pt-0 pr-6">
           <Project
             numberCount="01"
             hText="MAQUILADORA ARCHITECT"
-            pDescription="When art meet technology and nature, Maquiladora studio revamp their online presence."
+            pDescription="When art meet technology  Maquiladora studio revamp their online presence."
             pTitle="WEB DESIGN / WEB DEVELOPMENT"
             pProfessio="ARCHITECTURE"
             image="/Images/image2.jpg"
@@ -33,7 +39,7 @@ const LatestProject = () => {
             image="/Images/image8.jpg"
           />
         </div>
-        <div className="flex gap-10 mt-32">
+        <div className="flex gap-6 justify-between lg:pt-28 pt-0 pr-6">
           <Project
             numberCount="03"
             hText="RAUNG PACK"
@@ -52,11 +58,11 @@ const LatestProject = () => {
           />
         </div>
         <div
-          className={`mt-32 transition-all duration-700 ease-in-out overflow-hidden ${
-            showMore ? "h-[700px]" : "h-0"
+          className={`lg:pt-28 pt-0 transition-all duration-700 ease-in-out lg:overflow-hidden overflow-visible ${
+            showMore ? "h-[750px]" : "h-0"
           }`}
         >
-          <div className="flex gap-10 ">
+          <div className="flex gap-6 justify-between pr-6">
             <Project
               numberCount="05"
               hText="Hiking"
@@ -76,7 +82,7 @@ const LatestProject = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="lg:block hidden">
         <ReadButton
           text={showMore ? "Show Less" : "more works"}
           onClick={handleButtonClick}
