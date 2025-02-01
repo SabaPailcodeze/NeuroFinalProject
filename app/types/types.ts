@@ -8,9 +8,9 @@ export interface TextStrokeProps {
   WebkitTextStrokeColor: string;
   color: string;
   webkitSpanStroke: string;
-  hTeaxt: string,
-  pText: string,
-  lastHtext?: string
+  hTeaxt: string;
+  pText: string;
+  lastHtext?: string;
 }
 
 export interface ProjectProps {
@@ -35,6 +35,7 @@ export interface CircleBtnProps {
 
 export interface ReadButtonProps {
   text: string;
+  width?: string;
   onClick?: () => void;
 }
 
