@@ -13,7 +13,7 @@ const LatestProject = () => {
 
   return (
     <div className="flex flex-col">
-      <HeadLineText hOneTitle="LATEST" pTitle="PROJECTS" strokeWidth="570px" />
+      <HeadLineText hOneTitle="LATEST" pTitle="PROJECTS"  />
       <div className="flex overflow-x-auto w-full lg:block lg:overflow-x-hidden lg:flex-none lg:w-auto lg:pt-0 pt-16"
           style={{
             paddingBottom: '32px',
