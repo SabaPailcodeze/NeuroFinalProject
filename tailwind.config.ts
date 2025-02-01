@@ -29,9 +29,9 @@ export default {
         video: "url('/video/video.mp4')",
       },
       screens: {
-        xsm: { max: "400px" },// xsm იმუშავებს 400px-ზე დაბალ რეზოლუციაზე
         xs: { max: '640px'},
         mxs: { max: '400px'},  
+        xsm: { min: "400px" },
 
       },
     },
