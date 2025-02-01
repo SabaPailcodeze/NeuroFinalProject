@@ -6,7 +6,7 @@ import Slider from "../../Molecules/Slider/Slider";
 
 const Main = () => {
   return (
-    <div className="pl-[24px] md:px-[75px] xl:px-[150px] bg-black">
+    <div className="pl-6 md:px-[75px] xl:px-[150px] bg-black">
       <WeBuilt
         WebkitTextStrokeWidth="2px"
         WebkitTextStrokeColor="#666"
