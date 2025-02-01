@@ -28,7 +28,7 @@ const Slider = () => {
         className="w-full text-white"
       >
         <SwiperSlide>
-          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 cursor-pointer">
+          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 pr-6 cursor-pointer">
             <div
               className="relative md:w-[440px] justify-center h-[408px] bg-image4 bg-cover bg-center md:flex-[2] font-supreme cursor-pointer"
               style={{
@@ -72,7 +72,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 cursor-pointer">
+          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 pr-6 cursor-pointer">
             <div
               className="relative  md:w-[440px] justify-center h-[408px] bg-image5 bg-cover bg-center md:flex-[2] font-supreme cursor-pointer"
               style={{
@@ -117,7 +117,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 cursor-pointer">
+          <div className="flex flex-col md:flex-row gap-16 lg:gap-28 pr-6 cursor-pointer">
             <div
               className="relative md:w-[440px] justify-center h-[408px] bg-image2 bg-cover bg-center md:flex-[2] font-supreme cursor-pointer"
               style={{
@@ -161,7 +161,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex pr-6 flex-col md:flex-row justify-between">
         <ReadButton text="more stories" width="w-full" />
         <div className="hidden md:block">
           <div className="custom-pagination"></div>
