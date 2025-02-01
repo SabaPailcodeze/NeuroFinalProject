@@ -5,11 +5,10 @@ import StudioServices from '../../Atoms/StudioServices/StudioServices'
 const StudioServicesMarge = () => {
   return (
         <div>  
-            <div className='my-20'>
+            <div className='py-20'>
                 <HeadLineText 
                     hOneTitle='STUDIO'
                     pTitle='SERVICES'
-                    strokeWidth='700px'
                 />
             </div>
             <div className='pb-24'>

@@ -25,7 +25,6 @@ export interface ProjectProps {
 export interface HeadLineTextProps {
   hOneTitle: string;
   pTitle: string;
-  strokeWidth?: string;
 }
 
 export interface CircleBtnProps {
