@@ -1,10 +1,11 @@
 import React from 'react'
 import HeadLineText from '../../Atoms/HeadLineText/HeadLineText'
 import StudioServices from '../../Atoms/StudioServices/StudioServices'
+import CircleButton from '../../Atoms/CircleButton/CircleButton'
 
 const StudioServicesMarge = () => {
   return (
-        <div>  
+        <div className='relative'>  
             <div className='py-20'>
                 <HeadLineText 
                     hOneTitle='STUDIO'
@@ -29,7 +30,7 @@ const StudioServicesMarge = () => {
                 <div>            
                     <StudioServices 
                         pNumber='03'
-                        hText='Social Media Guideline'
+                        hText='Social Media Guide'
                         top='-94'
                     /> 
                 </div>
@@ -47,7 +48,18 @@ const StudioServicesMarge = () => {
                         top='-300'
                     />  
                 </div>
-            </div>   
+            </div>
+            <div className='absolute top-[48.1%] left-[70%] lg:left-[75%] lg:flex justify-center align-middle hidden'>
+                <div 
+                    className="w-72 h-96 bg-gray-700  left-[10%]"
+                    style={{
+                        clipPath: "polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                    }}>
+                </div>
+                <div className="absolute z-50 top-1/2 transform -translate-y-1/2 flex justify-center items-center w-full h-ful pointer-events-none">
+                    <CircleButton text="VIEW WORK" color="#E5E548" />
+                </div>
+            </div>
         </div>
     )
 }
