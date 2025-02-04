@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ButtonProps } from "@/app/types/types";
+import BurgerButton from "../BurgerButton/BurgerButton";
 
 const SideBar = ({ isOpen, setIsOpen }: ButtonProps) => {
   const toggleBtn = () => {
@@ -9,28 +10,14 @@ const SideBar = ({ isOpen, setIsOpen }: ButtonProps) => {
   };
   return (
     <nav
-      className={`z-20 ${
+      className={`z-50 hidden md:flex ${
         isOpen ? "bg-black" : "bg-[#3d3d3d49]"
-      } px-6 w-[80px] h-full flex flex-col justify-between py-10 text-white transition-all duration-500`}
+      } px-6 w-[80px] h-full flex flex-col justify-between py-11 text-white transition-all duration-700`}
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center w-10 h-10">
         <Image src="/Svgs/N.svg" alt="N" width={40} height={40} />
       </div>
-      <button
-        className="flex gap-[2px] justify-center cursor-pointer"
-        onClick={toggleBtn}
-      >
-        <div
-          className={`h-8 w-[1.5px] bg-white transition-all duration-500 ${
-            isOpen ? "rotate-45 translate-x-0" : "-translate-x-1"
-          }`}
-        ></div>
-        <div
-          className={`h-8 w-[1.5px] bg-white transition-all duration-500 ${
-            isOpen ? "-rotate-45 translate-x-0" : "translate-x-1"
-          }`}
-        ></div>
-      </button>
+      <BurgerButton isOpen={isOpen} toggleBtn={toggleBtn} />
       <div className="flex flex-col items-center justify-center">
         <span className="text-white text-center text-[20px] font-medium tracking-[0.8px] leading-normal">
           01

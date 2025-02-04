@@ -29,10 +29,11 @@ export default {
         video: "url('/video/video.mp4')",
       },
       screens: {
-        xs: { max: '640px'},
-        mxs: { max: '400px'},  
+        xs: { max: "640px" },
+        mxs: { max: "400px" },
         xsm: { min: "400px" },
-
+        xxs: { max: "560px" },
+        xmd: {max: "768px"},
       },
     },
   },
