@@ -18,6 +18,7 @@ const StudioServicesMarge = () => {
                         pNumber='01'
                         hText='Website'
                         top='112'
+                        imageSrc='/Images/image5.jpg'
                     />
                 </div>
                 <div>            
@@ -25,6 +26,7 @@ const StudioServicesMarge = () => {
                         pNumber='02'
                         hText='UI/UX'
                         top='9'
+                        imageSrc='/Images/image1.jpg'
                     />
                 </div>
                 <div>            
@@ -32,6 +34,7 @@ const StudioServicesMarge = () => {
                         pNumber='03'
                         hText='Social Media Guide'
                         top='-94'
+                        imageSrc='/Images/image2.jpg'
                     /> 
                 </div>
                 <div>
@@ -39,6 +42,7 @@ const StudioServicesMarge = () => {
                         pNumber='04'
                         hText='Motion'
                         top='-197'
+                        imageSrc='/Images/image3.jpg'
                     />  
                 </div>
                 <div>                        
@@ -46,6 +50,7 @@ const StudioServicesMarge = () => {
                         pNumber='05'
                         hText='BRAND STRATEGY'
                         top='-300'
+                        imageSrc='/Images/image4.jpg'
                     />  
                 </div>
             </div>
