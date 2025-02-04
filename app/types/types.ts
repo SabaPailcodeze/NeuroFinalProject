@@ -1,6 +1,8 @@
 export interface ButtonProps {
   isOpen: boolean;
+  // setIsOpen?: (isOpen: boolean) => void;
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleBtn?: () => void;
 }
 
 export interface TextStrokeProps {
@@ -45,6 +47,13 @@ export interface StudioServicesProps {
   imageSrc:string;
 }
 
+
+export interface scrollEnableProps {
+  scrollEnabled?: boolean;
+  setScrollEnabled: (scrollEnabled: boolean) => void;
+  handleScroll: () => void;
+}
+
 export interface SliderContentProps {
   pageNumber: string;
   hTitle : string;
@@ -53,3 +62,4 @@ export interface SliderContentProps {
   pProf:string
   imgSrc: string;
 }
+

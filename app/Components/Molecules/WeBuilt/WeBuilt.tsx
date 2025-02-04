@@ -12,14 +12,14 @@ const WeBuilt = ({
   lastHtext,
 }: TextStrokeProps) => {
   return (
-    <div className=" font-supreme flex flex-col">
+    <div className="font-supreme flex flex-col">
       <div
         id="WeBuilt"
-        className="py-40 font-supreme flex flex-col gap-12  h-[100%]"
+        className="py-28 lg:py-40 font-supreme flex flex-col gap-12  h-[100%]"
       >
         <div className="text-white">
           <h1
-            className="flex-row text-[56px] md:text-[64px] xl:text-[88px] font-bold leading-[100%] text-transparent uppercase"
+            className="flex-row text-[56px] md:text-[64px] lg:text-[88px] font-bold leading-[100%] text-transparent uppercase w-full"
             style={{
               WebkitTextStrokeWidth,
               WebkitTextStrokeColor,
@@ -27,7 +27,7 @@ const WeBuilt = ({
           >
             {hTeaxt}
             <p
-              className=" inline-flex px-0 md:px-3 text-transparent line-through decoration-1 uppercase text-center"
+              className=" inline-flex px-0 md:px-3 text-transparent line-through decoration-[1.6px] uppercase text-center"
               style={{
                 color,
                 WebkitTextStrokeColor: webkitSpanStroke,
@@ -38,7 +38,7 @@ const WeBuilt = ({
             {lastHtext}
           </h1>
         </div>
-        <div className="pt-12">
+        <div className="pt-0 md:pt-12">
           <ReadButton text="READ MORE" />
         </div>
       </div>

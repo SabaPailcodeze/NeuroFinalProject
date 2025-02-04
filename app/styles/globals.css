@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: black;
+  font-family: Supreme, sans-serif;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: transparent;
@@ -30,11 +35,11 @@
   background-color: #e5e548 !important;
 }
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
-}
+} */
 
-.hidden1 {
+.hiddenCont {
   width: calc(100% - 78px);
   height: calc(100% - 131px);
 }
