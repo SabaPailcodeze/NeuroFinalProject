@@ -1,8 +1,7 @@
 import React from "react";
 import { StudioServicesProps } from "@/app/types/types";
-import CircleButton from "../CircleButton/CircleButton";
 
-const StudioServices = ({ pNumber, hText, top }: StudioServicesProps) => {
+const StudioServices = ({ pNumber, hText, top, imageSrc }: StudioServicesProps) => {
   return (
     <div className="relative inline-block lg:w-1/2 w-full text-white font-sans">
       <div className="group relative mb-2 cursor-pointer p-3 text-[31px] font-bold">
@@ -19,8 +18,9 @@ const StudioServices = ({ pNumber, hText, top }: StudioServicesProps) => {
           style={{
               clipPath: "polygon(0% 20%, 20% 0%, 100% 0%, 100% 100%, 0% 100%)",
               top: `${top}px`,
+              backgroundImage: `url(${imageSrc})`
             }}
-            className="hidden lg:block bg-image3 bg-center bg-cover absolute z-10 lg:left-[150%] left-[140%] w-72 h-96 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"
+            className="hidden lg:block bg-center bg-cover absolute z-10 lg:left-[150%] left-[140%] w-72 h-96 opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none"
           >
         </div>
       </div>

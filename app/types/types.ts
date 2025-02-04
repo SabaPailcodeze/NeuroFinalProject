@@ -44,10 +44,22 @@ export interface StudioServicesProps {
   pNumber: string;
   hText: string;
   top: string;
+  imageSrc:string;
 }
+
 
 export interface scrollEnableProps {
   scrollEnabled?: boolean;
   setScrollEnabled: (scrollEnabled: boolean) => void;
   handleScroll: () => void;
 }
+
+export interface SliderContentProps {
+  pageNumber: string;
+  hTitle : string;
+  pDescription: string;
+  Pdate: string;
+  pProf:string
+  imgSrc: string;
+}
+
