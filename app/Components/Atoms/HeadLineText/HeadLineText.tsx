@@ -1,7 +1,5 @@
 import React from "react";
-import React from 'react'
-import { HeadLineTextProps } from '@/app/types/types';
-
+import { HeadLineTextProps } from "@/app/types/types";
 
 const HeadLineText = ({ hOneTitle, pTitle }: HeadLineTextProps) => {
   return (
