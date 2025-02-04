@@ -20,8 +20,6 @@ const Project = ({numberCount, hText, pDescription, pTitle, pProfessio, image,}:
           }}
           >
           <div className="absolute bg-black rounded-[50%] bottom-5 right-2 lg:right-7 py-2.5 px-2 opacity-0 group-hover:opacity-100">
-  
-
             <Image
               src="/Svgs/whiteArrow.svg"
               alt="arrow"
