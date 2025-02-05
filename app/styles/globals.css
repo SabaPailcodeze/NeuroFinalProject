@@ -35,9 +35,9 @@ body {
   background-color: #e5e548 !important;
 }
 
-/* .no-scroll {
+.no-scroll {
   overflow: hidden;
-} */
+}
 
 .hiddenCont {
   width: calc(100% - 78px);
