@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { scrollEnableProps } from "@/app/types/types";
 
-const BounceArrow = ({ setScrollEnabled, handleScroll }: scrollEnableProps) => {
+const BounceArrow = ({ handleScroll }: scrollEnableProps) => {
   return (
     <div onClick={handleScroll}>
       <Image

@@ -2,7 +2,6 @@ import { ButtonProps } from "@/app/types/types";
 import React, { useState, useEffect } from "react";
 import CircleButton from "../CircleButton/CircleButton";
 import BounceArrow from "../BounceArrow/BounceArrow";
-import { isHTTPMethod } from "next/dist/server/web/http";
 
 const HeroSectionTxt = ({ isOpen }: ButtonProps) => {
   const [scrollEnabled, setScrollEnabled] = useState(false);
@@ -24,12 +23,12 @@ const HeroSectionTxt = ({ isOpen }: ButtonProps) => {
     >
       <div className="w-full h-[80%] flex items-center justify-between lg:items-start flex-col">
         <div className=" lg:w-[750px] w-full lg:h-full md:h-[200px]">
-          <div className="xxs:text-[50px] text-[66px] md:text-[76px] lg:text-[85px] font-bold uppercase">
-            <span className="leading-[96px] flex xxs:justify-start justify-center lg:justify-start w-full text-white">
+          <div className="xxs:text-[48px] text-[66px] md:text-[76px] lg:text-[85px] font-bold uppercase">
+            <span className="md:leading-[96px] flex xxs:justify-start justify-center lg:justify-start w-full text-white">
               creative team
             </span>
             <div className="hidden lg:flex w-[50%] lg:w-full relative">
-              <div className="text-c-yellow lg:text-right w-full flex items-center justify-end leading-[96px]">
+              <div className="text-c-yellow lg:text-right w-full flex items-center justify-end md:leading-[96px]">
                 for future’s
               </div>
               <div className="absolute md:top-11 lg:top-11 bg-c-yellow w-[50%] lg:w-full h-[1.6px]"></div>
@@ -37,7 +36,7 @@ const HeroSectionTxt = ({ isOpen }: ButtonProps) => {
             <span className="flex lg:hidden xxs:justify-start justify-center decoration-[1.6px] text-c-yellow line-through">
               for future’s
             </span>
-            <span className=" lg:pl-28 flex xxs:justify-start justify-center lg:justify-start leading-[96px] text-white">
+            <span className=" lg:pl-28 flex xxs:justify-start justify-center lg:justify-start md:leading-[96px] text-white">
               brands.
             </span>
           </div>
@@ -49,10 +48,7 @@ const HeroSectionTxt = ({ isOpen }: ButtonProps) => {
               <div className="flex w-full md:w-[30%] items-center justify-between md:justify-center md:block pr-6 md:pr-0">
                 <CircleButton text="LET’S WORK " color="#E5E548" />
                 <div className=" md:hidden">
-                  <BounceArrow
-                    setScrollEnabled={setScrollEnabled}
-                    handleScroll={handleScroll}
-                  />
+                  <BounceArrow handleScroll={handleScroll} />
                 </div>
               </div>
             </div>
@@ -62,10 +58,7 @@ const HeroSectionTxt = ({ isOpen }: ButtonProps) => {
           className="hidden md:flex w-full lg:w-[92%] items-center justify-end md:justify-center cursor-pointer"
           onClick={handleScroll}
         >
-          <BounceArrow
-            setScrollEnabled={setScrollEnabled}
-            handleScroll={handleScroll}
-          />
+          <BounceArrow handleScroll={handleScroll} />
         </div>
       </div>
       <div className="w-full flex justify-center">

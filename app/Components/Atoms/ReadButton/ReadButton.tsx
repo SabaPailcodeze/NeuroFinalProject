@@ -6,7 +6,7 @@ const ReadButton = ({ text, onClick, width }: ReadButtonProps) => {
     <div>
       <button
         onClick={onClick}
-        className={`${width} px-5 py-4 text-white  font-bold font-supreme text-[12px] uppercase rounded-[80px]  border border-white hover:bg-white hover:text-black transition-colors duration-500 ease-in-out`}
+        className={`${width} px-5 py-4 text-white  font-bold font-supreme text-[12px] uppercase rounded-[80px]  border border-white md:hover:bg-white md:hover:text-black transition-colors duration-500 ease-in-out`}
       >
         {text}
       </button>

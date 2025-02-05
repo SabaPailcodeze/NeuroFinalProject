@@ -1,6 +1,5 @@
 import React from "react";
 import CircleButton from "../../Atoms/CircleButton/CircleButton";
-import HeadLineText from "../../Atoms/HeadLineText/HeadLineText";
 
 const NeuroFooter = () => {
   return (
@@ -56,17 +55,35 @@ const NeuroFooter = () => {
           </div>
           <div className="flex justify-between w-[30%] pb-6 gap-[68px] sm:gap-0">
             <div className="flex flex-col gap-3 text-[14px] font-medium tracking-[0.56px]">
-              <span className="cursor-pointer hover:text-white">HOME</span>
-              <span className="cursor-pointer hover:text-white">WORKS</span>
-              <span className="cursor-pointer hover:text-white">COMPANY</span>
-              <span className="cursor-pointer hover:text-white">THOUGHTS</span>
-              <span className="cursor-pointer hover:text-white">CONTACT</span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                HOME
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                WORKS
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                COMPANY
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                THOUGHTS
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                CONTACT
+              </span>
             </div>
             <div className="flex flex-col gap-3 text-[14px] tracking-[1px] font-normal">
-              <span className="cursor-pointer hover:text-white">Instagram</span>
-              <span className="cursor-pointer hover:text-white">Twitter</span>
-              <span className="cursor-pointer hover:text-white">LinkedIn</span>
-              <span className="cursor-pointer hover:text-white">Facebook</span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                Instagram
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                Twitter
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                LinkedIn
+              </span>
+              <span className="cursor-pointer md:hover:text-white md:hover:scale-110 duration-300">
+                Facebook
+              </span>
             </div>
           </div>
         </div>

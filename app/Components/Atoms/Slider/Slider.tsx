@@ -33,7 +33,7 @@ const Slider = () => {
             pProf="ARCHITECTURE"
             imgSrc="/Images/image4.jpg"
           />
-        </SwiperSlide> 
+        </SwiperSlide>
         <SwiperSlide>
           <SliderContent
             pageNumber="02"
