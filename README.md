@@ -28,8 +28,7 @@ The goal was to convert a Figma design into a real-world, production-ready websi
 
 ## 🔗 Live Demo
 
-👉 [View Project on Vercel](https://your-vercel-link.com)  
-_(Replace with your actual link if available)_
+👉 [View Project on Vercel](https://neuro-final-project.vercel.app/)  
 
 ## 👨‍💻 My Role
 
